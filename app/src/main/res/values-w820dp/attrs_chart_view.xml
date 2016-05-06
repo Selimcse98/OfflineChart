@@ -1,0 +1,14 @@
+<resources>
+    <declare-styleable name="ChartView">
+        <attr name="exampleString" format="string" />
+        <attr name="exampleDimension" format="dimension" />
+        <attr name="exampleColor" format="color" />
+        <attr name="exampleDrawable" format="color|reference" />
+    </declare-styleable>
+    <declare-styleable name="ActivityGraphCanvas">
+        <attr name="activityString" format="string" />
+        <attr name="activityDimension" format="dimension" />
+        <attr name="activityColor" format="color" />
+        <attr name="activityDrawable" format="color|reference" />
+    </declare-styleable>
+</resources>
