@@ -73,12 +73,8 @@ public class ChartView extends View {
     public void setData(byte []data) {
         this.data = data;
         invalidate();
-<<<<<<< HEAD
         for(int i =0;i<data.length;i++)
             System.out.println("Data at ChartView "+i+" "+data[i]);
-=======
->>>>>>> 5de61355cd92ec5c713892e3fdc94deb15b7e8b3
-//        System.out.println(qrsCheck.setData(data));
     }
 
     @Override
