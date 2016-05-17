@@ -1,10 +1,15 @@
 package com.scu.offlinechart;
 
 import android.app.Fragment;
+
+import android.app.FragmentTransaction;
+import android.graphics.Typeface;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
+import android.widget.Button;
 import android.widget.TextView;
 
 public class PatientDetail extends Fragment {
@@ -47,12 +52,11 @@ public class PatientDetail extends Fragment {
     }
 
     public void setData(byte []data) {
-//        for(int i =0;i<data.length;i++)
-//            System.out.println("Data at Patient Detail "+i+" "+data[i]);
-//        //ECGGraph ecgGraph = new ECGGraph();
         ECGGraph ecgGraph = (ECGGraph)getFragmentManager().findFragmentById(R.id.line_chart);
         if(ecgGraph!=null)
             ecgGraph.setData(data);
         else System.out.println(" ECGGraph null reference");
+        ECGGraph ecgGraphFragment = (ECGGraph)getFragmentManager().findFragmentById(R.id.line_chart);
+        ecgGraphFragment.setData(data);
     }
 }

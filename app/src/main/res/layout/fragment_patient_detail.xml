@@ -6,6 +6,7 @@
     android:minWidth="300dp"
     tools:context="com.scu.offlinechart.PatientDetail">
 
+
     <LinearLayout
         android:id="@+id/patient_detail_title"
         android:layout_width="match_parent"
